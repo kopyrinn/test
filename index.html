@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		.box {
+			background: red;
+			height: 50px;
+		}
+		.box2 {
+			background: blue;
+			height: 50px;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<button class="btn">увелич</button>
+	<div class="box">		
+	</div>
+	<div class="box2">
+	</div>
+
+<script type="text/javascript">
+	let number = 1;
+
+	let color = "red"
+	//alert(number);
+
+	console.log(number);
+
+	let name = "вася";
+
+	name = "толя"
+
+	console.log(name + " пупкин " + number + " лет");
+
+	document.querySelector('.text').innerHTML = number;
+
+	document.querySelector('.btn').onclick = function() {
+		document.querySelector('.box').style.height = number + "px";
+		document.querySelector('.box2').style.height = number + "px";	
+		document.querySelector('.box').style.background = color;
+		document.querySelector('.box2').style.background = color;
+	}
+</script>
+</body>
+</html>
